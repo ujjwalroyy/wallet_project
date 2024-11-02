@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "wallet_project_backend": {
+      "candid": "src/wallet_project_backend/wallet_project_backend.did",
+      "package": "wallet_project_backend",
+      "type": "rust"
+    },
+    "wallet_project_frontend": {
+      "dependencies": [
+        "wallet_project_backend"
+      ],
+      "source": [
+        "src/wallet_project_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
