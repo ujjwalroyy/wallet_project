@@ -2,8 +2,10 @@
   "canisters": {
     "wallet_project_backend": {
       "candid": "src/wallet_project_backend/wallet_project_backend.did",
+      "wasm": "target/wasm32-unknown-unknown/release/wallet_project_backend.wasm",
+      "type": "rust",
       "package": "wallet_project_backend",
-      "type": "rust"
+      "build": "cargo build --target wasm32-unknown-unknown --release"
     },
     "wallet_project_frontend": {
       "dependencies": [
@@ -17,7 +19,6 @@
   },
   "defaults": {
     "build": {
-      "args": "",
       "packtool": ""
     }
   },
